@@ -1,25 +1,21 @@
-#banner {
+/* Made with love <3... and confusion >.<  */
+
+
+
+
+.Banner {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #303059;
+	background-color: #98e9d0;
 	width: 100%;
-	height: 50px;
+	height: 73px;
 }
 
-#banner-content {
-	margin: 0 auto;
-	padding: 10px;
-	display: flex;
-}
 
-#main-content {
-	padding-top: 300px;
-	padding-left: 120px;
-	width: 39%;
-	font-size: 42px;	
-}
 
+
+/* ignore me, dont click me! */
 .button {
   background-color: #FFFFFF;
   border: none;
@@ -28,25 +24,17 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 2px 2px;
   cursor: pointer;
   border-radius: 16px;
-  font-size: 42px;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.button {
-  background-color: #FFFFFF;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-  font-size: 27px;
-}
+
+
 
 .button:hover {
   background-color: #FFFFFF;
@@ -56,9 +44,204 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 2px 2px;
   cursor: pointer;
   border-radius: 16px;
-  font-size: 33px;
-  font-weight: bold;
+  font-size: 2em;
+  color: black;
+  font-style: bold;
 }
+
+
+
+
+.Content {
+	position: absolute;
+	top: 110px;
+	height: 80%;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+  	font-weight: 500;
+  	font-style: normal;
+}
+
+
+
+
+.Links {
+	float: left;
+	width: 185px;
+	height: 68%;
+	overflow: auto;
+	/*background: #ffd1d1;*/
+	border: 5px;
+	padding: 5px;
+	margin-right: 10px;
+	
+}
+
+
+
+
+.Info {
+	text-align: center;
+	float: none;
+	/*margin-left: 205px;*/
+	margin-right: 20px;
+	overflow: auto;
+	height: 100%;
+	border: 5px;
+	padding: 10px;
+	/*border-radius: 16px;*/
+	/*background: #7979EA;*/
+}
+
+
+
+
+.Title {
+	text-align: center;
+	border: 3px black;
+	font-family: "Playwrite AR", cursive;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 72px;
+	margin-bottom: 12px;
+	
+}
+
+
+
+
+.Column-Item {
+	border: 3px solid;
+	border-color: #efefef;
+	border-radius: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
+/*.Container-1 { */
+  /*height: 100vh; */ /* so we can see changes to the cross axis... such as those made with 
+                    (align-items, and align-content). */
+
+  /* boxes are aligned next to each other along a main and cross axis. */
+  /* display: flex;
+  
+  /* the main axis direction can be set to either column or row.       */
+  /*flex-direction: row;*/ /* [NOTE] flex-direction is set to row by default.     */
+  
+  /* justify-content is used to align the flex "boxes" along the main axis, options:
+  		: aligned-left                                    - flex-start
+  		: aligned-right                                   - flex-end
+  		: aligned-center                                  - center
+  		: aligned-center with equal space between "boxes" - space-between
+  		: aligned-center space around each "box"          - space-around
+  		: align-center equal space around each "box"      - space-evenly		
+  */
+  /*justify-content: flex-start; */
+  
+  /* align-items is used to align the flex "boxes" along the cross axis, options:
+  		: aligned-bottom                       - flex-end
+  		: aligned-top                          - flex-start
+  		: aligned-center                       - center
+  		: the baseline of each text is aligned - baseline
+  */
+  /* align-items: flex-start;*/ /* [NOTE] align-items is most visible when coupled with the 
+                                     height property e.g) height: 100vh; */
+
+  /* flex-wrap is by default set to nowrap, but can be set to wrap to allow items to  
+     wrap.*/                   
+  /* flex-wrap: wrap;*/
+  
+  /* align-content is not to be confused with "align-items" it should only work with 
+     flex-wrap */
+  /* align-content: flex-start;*/
+   
+/*}*/
+
+
+
+
+/*.item-1 { */
+  /* flex-grow takes a unitless value as a proportion (0 - 1?) and allows an item to grow
+     based on this value. */ 
+  /*flex-grow: 1;*/
+  
+  /* flex-shrink defines how fast an item shrinks in comparasion to the other items. */
+  /*flex-shrink: 1;*/
+/*}*/
+
+
+
+
+/*.item-3 {*/
+  /* flex-grow takes a unitless value as a proportion (0 - 1?) and allows an item to grow
+     based on this value. */ 
+  /* flex-grow: .75;*/ 
+  
+  /* flex-shrink defines how fast an item shrinks in comparasion to the other items. (Kind
+     of works... not really)*/
+  /* flex-shrink: 1;*/
+  
+  /* flex-basis defines the size of an item before the remaining space is distributed. */
+  /* flex-basis: 300px;*/
+  
+  /* flex is shorthand for the combination of flex-grow, flex-shrink, and flex-basis. The 
+     first parameter is flex-grow, and the other two parameters are unknown but optional. */
+  /* flex: 0;*/
+  
+  /* align-self: baseline; */
+  
+  /* order can be used to define the order of the "items" in the row, by setting it to -1 
+     we move this item to the front of the row. */ 
+  /* order: -1; */
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
