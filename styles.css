@@ -1,9 +1,5 @@
-/* made for fun :P */
 
-
-
-
-/* Banner // Banner // Banner // Banner // Banner*/
+/* Banner - displayed at the top of the webpage. */
 .Banner {
 	position: absolute;
 	top: 0;
@@ -11,24 +7,20 @@
 	background-color: #98e9d0;
 	width: 100%;
 	height: 78px;
+	color: #323232;
 }
-/* // // // // // // // // // // // // // // // /*/
 
 
 
 
-
-
-
-
-
-/* Content // Content // Content // Content // Co*/
+/* Content - the webpage's body. */
 .Content {
 	position: absolute;
 	top: 110px;
 	height: 85%;
 	width: 100%;
 	font-family: "Poppins", sans-serif;
+	color: #323232;
   	font-weight: 500;
   	font-style: normal;
 }
@@ -36,18 +28,11 @@
 
 
 
-/* Column-Item // Column-Item // Column-Item // C*/
-.Column-Item {
+/* Nav-Tree - links and stuff on the left-side of the web-page. */
+.Nav-Tree {
 	font-size: 1.2em;
-}
-
-
-
-
-/* Links // Links // Links // Links // Links*/
-.Links {
 	float: left;
-	width: 185px;
+	width: 200px;
 	height: 100%;
 	overflow: auto;
 	padding: 5px;
@@ -55,17 +40,50 @@
 	border-radius: 16px;
 	border: 3px solid #efefef;
 }
-/* // // // // // // // // // // // // // // // /*/
+
+	/* Remove margins and padding from the parent ul */
+	#Nav-UL {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		/* Style the caret/arrow */
+		.Nav-Caret {
+			cursor: pointer;
+			user-select: none; /* Prevent text selection */
+		}
+
+		/* Create the caret/arrow with a unicode, and style it */
+		.Nav-Caret::before {
+			content: "\25B6";
+			color: #323232;
+			display: inline-block;
+			margin-right: 6px;
+		}
+
+		/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+		.Nav-Caret-Down::before {
+			transform: rotate(90deg);
+		}
+
+	/* Hide the nested list */
+	.Nested {
+		list-style-type: none;
+		font-size: .8em;
+		display: none;
+	}
+
+	/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+	.Active {
+		display: block;
+	}
 
 
 
 
-
-
-
-
-/* Info // Info // Info // Info // Info // Info /*/
-.Info {
+/* Main-Section - the meat and potatoes of the webpage... this is the main part. */
+.Main-Section {
 	text-align: center;
 	float: none;
 	margin-right: 20px;
@@ -82,7 +100,7 @@
 .Title {
 	text-align: center;
 	border: 3px black;
-	font-family: "Playwrite AR", cursive;
+	font-family: "Poppins", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 100;
 	font-style: normal;
@@ -98,7 +116,7 @@
 	overflow: auto;
 	border: 5px;
 	padding: 10px;
-	margin-bottom: 420px;
+	margin-bottom: 69px;
 }
 
 
@@ -257,3 +275,34 @@ td {
 	border-radius:4px;
 }
 /* // // // // // // // // // // // // // // // /*/
+
+
+
+.Header-Link:link {
+	text-decoration: none;
+	color: #323232
+}
+
+.Header-Link:visited {
+	text-decoration: none;
+	color: #696969
+}
+
+.Header-Link:hover {
+	text-decoration: underline;
+}
+
+.Header-Link:active {
+	text-decoration: underline;
+}
+
+
+div.scroll-container {
+	overflow: auto;
+	white-space: nowrap;
+	padding: 10px;
+}
+
+div.scroll-container img {
+	padding: 10px;
+}
